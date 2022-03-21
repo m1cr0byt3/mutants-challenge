@@ -16,7 +16,9 @@ class MutantService
     def  is_mutant
       @has_sequence = 0
       check_forms
-      @has_sequence > LIMIT_SEQUENCE
+      result = @has_sequence > LIMIT_SEQUENCE
+      mutant = Mutant.create!(is_mutant: result)
+      result
   end
 
   private 
