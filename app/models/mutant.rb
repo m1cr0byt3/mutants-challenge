@@ -1,0 +1,2 @@
+class Mutant < ApplicationRecord
+end
