@@ -12,7 +12,7 @@ class MutantsController < ApplicationController
     render json: {error: e.message}, status: :unprocessable_entity
   end
 
-  # POST /mutant test
+  # POST /mutant
   def index
     is_mutant = MutantService.run params['dna']
     render json: {is_mutant: is_mutant}, status: is_mutant ? :ok : :not_found
