@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Mutant.create!([
+    {is_mutant: true},
+    {is_mutant: true},
+    {is_mutant: true},
+    {is_mutant: true},
+    {is_mutant: true},
+    
+    
+    {is_mutant: false},
+    {is_mutant: false},
+    {is_mutant: false},
+    {is_mutant: false},
+    {is_mutant: false},
+    {is_mutant: false},
+    {is_mutant: false},
+    {is_mutant: false},
+    
+])
