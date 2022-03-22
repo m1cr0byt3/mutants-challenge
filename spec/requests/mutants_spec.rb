@@ -65,7 +65,7 @@ RSpec.describe "Mutant", type: :request do
       before { post "/mutant", params: dna_params_failed }
       context "response" do
         subject { response }
-        it { is_expected.to have_http_status(:not_found) }
+        it { is_expected.to have_http_status(:forbidden) }
       end
     end
   
@@ -73,7 +73,7 @@ RSpec.describe "Mutant", type: :request do
       before { post "/mutant", params: dna_params_failed_with_one }
       context "response" do
         subject { response }
-        it { is_expected.to have_http_status(:not_found) }
+        it { is_expected.to have_http_status(:forbidden) }
       end
     end
   
